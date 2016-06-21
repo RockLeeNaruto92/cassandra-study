@@ -21,7 +21,7 @@ echo 'export CASSANDRA_HOME=$HOME/Application/apache-cassandra-2.2.6' >> $HOME/.
 echo "Setted up CASSANDRA_HOME"
 echo $CASSANDRA_HOME
 
-echo "export PATH=$PATH:$CASSANDRA_HOME/bin" >> $HOME/.cassandra.sh
+echo 'export PATH=$PATH:$CASSANDRA_HOME/bin' >> $HOME/.cassandra.sh
 echo "Added CASSANDRA's bin folder to PATH\n\n"
 
 echo "Please run below command to continue setting:"
