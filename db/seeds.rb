@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+number = 1_000_000
+number.times do |n|
+  Blog.create!(
+    subdomain: "blog-#{n}",
+    name: "Blog #{n}" ,
+    description: "A blog about all things big data #{n}")
+end
